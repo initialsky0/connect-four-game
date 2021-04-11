@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- CSS -->
+   <link rel="stylesheet" href="./style.css">
+   <title>Connect Four</title>
+</head>
+<body>
+   <h1>Welcome to Connect Four!</h1>
+   <h2>The object of this game is to connect four of your chips in a row!</h2>
+   <div class="start-text">
+      <h3>Let's get started!, Please enter player names:</h3>
+      <form id="player-info" action="#">
+         <label for="player-1">Player 1:</label>
+         <input id="player-1" type="text" name="player-1" required>
+         <label for="player-2">Player 2:</label>
+         <input id="player-2" type="text" name="player-2" required>
+         <input type="submit" value="Start">
+      </form>
+   </div>
+   <h3 class="player-text" hidden>
+      Player <span class="player">name</span>: it is your turn, please 
+      pick a column to drop your <span class="player">color</span> chip.
+   </h3>
+   <button id="btn-restart">Restart</button>
+   <table id="game-board">
+      <tr class="row-5">
+         <td class="col-0"></td>
+         <td class="col-1"></td>
+         <td class="col-2"></td>
+         <td class="col-3"></td>
+         <td class="col-4"></td>
+         <td class="col-5"></td>
+         <td class="col-6"></td>
+      </tr>
+      <tr class="row-4">
+         <td class="col-0"></td>
+         <td class="col-1"></td>
+         <td class="col-2"></td>
+         <td class="col-3"></td>
+         <td class="col-4"></td>
+         <td class="col-5"></td>
+         <td class="col-6"></td>
+      </tr>
+      <tr class="row-3">
+         <td class="col-0"></td>
+         <td class="col-1"></td>
+         <td class="col-2"></td>
+         <td class="col-3"></td>
+         <td class="col-4"></td>
+         <td class="col-5"></td>
+         <td class="col-6"></td>
+      </tr>
+      <tr class="row-2">
+         <td class="col-0"></td>
+         <td class="col-1"></td>
+         <td class="col-2"></td>
+         <td class="col-3"></td>
+         <td class="col-4"></td>
+         <td class="col-5"></td>
+         <td class="col-6"></td>
+      </tr>
+      <tr class="row-1">
+         <td class="col-0"></td>
+         <td class="col-1"></td>
+         <td class="col-2"></td>
+         <td class="col-3"></td>
+         <td class="col-4"></td>
+         <td class="col-5"></td>
+         <td class="col-6"></td>
+      </tr>
+      <tr class="row-0">
+         <td class="col-0"></td>
+         <td class="col-1"></td>
+         <td class="col-2"></td>
+         <td class="col-3"></td>
+         <td class="col-4"></td>
+         <td class="col-5"></td>
+         <td class="col-6"></td>
+      </tr>
+   </table>
+   <!-- JQuery -->
+   <script 
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js" 
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" 
+      crossorigin="anonymous"
+   ></script>
+   <!-- Script -->
+   <script src="./script.js"></script>
+</body>
+</html>

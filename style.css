@@ -1,0 +1,58 @@
+:root {
+   --p1-color: rgb(0, 195, 255);
+   --p2-color: rgb(250, 67, 11);
+   --blank-color : rgb(150, 150, 150);
+}
+
+body {
+   margin: 0;
+   box-sizing: border-box;
+}
+
+h1, h2, h3 {
+   text-align: center;
+   transform: scale(1.5);
+}
+
+.player {
+   color: var(--blank-color);
+}
+
+#player-info {
+   display: block;
+   text-align: center;
+   transform: scale(1.5);
+   margin: 25px;
+}
+
+#player-info label[for="player-1"] {
+   color: var(--p1-color);
+}
+
+#player-info label[for="player-2"] {
+   color: var(--p2-color);
+}
+
+#player-info input[type="text"]:focus {
+   outline: none;
+}
+
+#btn-restart {
+   display: none;
+   margin: auto;
+   transform: scale(1.5);
+}
+
+#game-board {
+   margin: auto;
+   margin-top: 5vh;
+   border-spacing: 5px;
+}
+
+#game-board td {
+   border: 5px solid black;
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   background-color: var(--blank-color);
+}
