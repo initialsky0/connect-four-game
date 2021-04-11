@@ -7,7 +7,7 @@
 body {
    margin: 0;
    box-sizing: border-box;
-   overflow: hidden;
+   overflow-x: hidden;
 }
 
 h1, h2, h3 {
